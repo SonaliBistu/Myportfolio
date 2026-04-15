@@ -9,7 +9,7 @@ import project3 from "../assets/project3.webp"; // NEW PROJECT IMAGE
 const projects = [
   {
     id: 1,
-    title: "Smart Feet & Logistic Management System",
+    title: "Smart Fleet Tracking & Logistics Management System",
     desc: "A single integrated system combining Smart Feet analysis and Logistic Management for tracking, delivery, and operations.",
     tech: "HTML, CSS, JavaScript, PHP, DevOps",
     github: "https://github.com/SonaliBistu/The_Smart_Feet_and_Logistic_Management_System",
