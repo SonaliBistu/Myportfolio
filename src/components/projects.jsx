@@ -4,13 +4,14 @@ import { motion } from "framer-motion";
 // ✅ IMPORT IMAGES
 import project1 from "../assets/project1.jpg";
 import project2 from "../assets/project2.webp";
-import project3 from "../assets/project3.webp"; // NEW PROJECT IMAGE
+import project3 from "../assets/project3.webp";
+import project4 from "../assets/project4.jpg"; // 👈 add weather app image (add this file)
 
 const projects = [
   {
     id: 1,
     title: "Smart Fleet Tracking & Logistics Management System",
-    desc: "A single integrated system combining Smart Feet analysis and Logistic Management for tracking, delivery, and operations.",
+    desc: "A single integrated system combining Smart Fleet analysis and Logistic Management for tracking, delivery, and operations.",
     tech: "HTML, CSS, JavaScript, PHP, DevOps",
     github: "https://github.com/SonaliBistu/The_Smart_Feet_and_Logistic_Management_System",
     image: project1,
@@ -30,6 +31,16 @@ const projects = [
     tech: ".NET Framework, C#, ASP.NET, SQL Server",
     github: "https://github.com/SonaliBistu/Student_Registration_Protal_C-_.net",
     image: project3,
+  },
+
+  // 🌤️ NEW PROJECT (LIVE WEATHER APP)
+  {
+    id: 4,
+    title: "Live Weather App",
+    desc: "A real-time weather forecasting application that shows temperature, humidity, wind speed, and weather conditions using OpenWeather API.",
+    tech: "React, Tailwind CSS, OpenWeather API",
+    github: "https://github.com/SonaliBistu/Live_waether_Making_App_React.js.git", // change if needed
+    image: project4,
   },
 ];
 
@@ -53,7 +64,6 @@ const Projects = () => {
           Featured <span className="text-purple-500">Projects</span>
         </motion.h2>
 
-        {/* SUBTEXT */}
         <p className="text-sm text-gray-400 text-center mb-16">
           Some of my recent work.
         </p>
@@ -71,7 +81,6 @@ const Projects = () => {
               className="group relative p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-xl shadow-lg overflow-hidden"
             >
 
-              {/* IMAGE */}
               <img
                 src={project.image}
                 alt={project.title}
@@ -79,22 +88,18 @@ const Projects = () => {
                 className="w-full h-48 object-cover rounded-lg mb-4 group-hover:scale-105 transition duration-300"
               />
 
-              {/* TITLE */}
               <h3 className="text-xl font-semibold text-purple-300 mb-3 relative z-10">
                 {project.title}
               </h3>
 
-              {/* DESCRIPTION */}
               <p className="text-gray-400 text-sm mb-4 relative z-10">
                 {project.desc}
               </p>
 
-              {/* TECH */}
               <p className="text-xs text-purple-400 mb-6 relative z-10">
                 {project.tech}
               </p>
 
-              {/* BUTTON */}
               <a
                 href={project.github}
                 target="_blank"
